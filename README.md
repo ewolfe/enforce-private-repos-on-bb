@@ -11,11 +11,11 @@
 
 Humans make mistakes, sometimes we forget to mark a repository as private when we first create it.
 
-This can lead to all of our source code being accidentally published publically on the internet for a few months before anyone notices. (Yep, this happened!)
+This can lead to all of our source code being accidentally published publicly on the internet for a few months before anyone notices. (Yep, this happened!)
 
 ## This Solution
 
-This project is a microservice that works by listening for events within your BitBucket account. Specifically, it looks for the `repo:created` event. Once this service gets a notification, it will check the `is_private` attribute and if it’s `false` then it will update it to `true`. That’s literally it.
+This project is a micro-service that works by listening for events within your BitBucket account. Specifically, it looks for the `repo:created` event. Once this service gets a notification, it will check the `is_private` attribute and if it’s `false` then it will update it to `true`. That’s literally it.
 
 <a href="./assets/screenshot-install.png">
   <img align="center" style="width: 100%; max-width: 1200px;" src="./assets/demo.gif" />
