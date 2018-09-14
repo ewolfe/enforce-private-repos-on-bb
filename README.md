@@ -17,7 +17,7 @@ This can lead to all of our source code being accidentally published publicly on
 
 This project is a micro-service that works by listening for events within your BitBucket account. Specifically, it looks for the `repo:created` event. Once this service gets a notification, it will check the `is_private` attribute and if it’s `false` then it will update it to `true`. That’s literally it.
 
-<a href="./assets/screenshot-install.png">
+<a href="./assets/demo.gif">
   <img align="center" style="width: 100%; max-width: 1200px;" src="./assets/demo.gif" />
 </a>
 
