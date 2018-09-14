@@ -1,0 +1,26 @@
+{
+  "name": "enforce-private-repos-bb",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "dev": "env-cmd ./.env.dev yarn start",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "8.11.4"
+  },
+  "dependencies": {
+    "atlassian-connect-express": "^3.1.0",
+    "body-parser": "^1.14.2",
+    "compression": "^1.6.0",
+    "cookie-parser": "^1.4.0",
+    "errorhandler": "^1.4.2",
+    "express": "^4.13.3",
+    "morgan": "^1.6.1",
+    "pg": "^7.4.3",
+    "sqlite3": "^4.0.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2"
+  }
+}

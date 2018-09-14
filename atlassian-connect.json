@@ -1,0 +1,22 @@
+{
+  "key": "enforce-private",
+  "name": "Enforce Private Repos",
+  "description": "Force all new repositories to be private",
+  "baseUrl": "{{localBaseUrl}}",
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "modules": {
+    "webhooks": [
+      {
+        "event": "repo:created",
+        "url": "/webhook"
+      }
+    ]
+  },
+  "scopes": ["repository:admin"],
+  "contexts": ["account"]
+}

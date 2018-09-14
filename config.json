@@ -1,0 +1,17 @@
+{
+  "product": "bitbucket",
+  "development": {
+    "port": 3000,
+    "errorTemplate": true
+  },
+  "production": {
+    "port": "$PORT",
+    "errorTemplate": true,
+    "localBaseUrl": "https://enforce-private-repos-on-bb.herokuapp.com",
+    "store": {
+      "dialect": "postgres",
+      "url": "$DATABASE_URL"
+    },
+    "whitelist": ["bitbucket.org", "api.bitbucket.org"]
+  }
+}
